@@ -129,21 +129,21 @@
 }
 .l1:hover{
   background-color: var(--Bright-orange);
-  border: 3px solid white ;
+  border: 2px solid white ;
   color: white;
   transition: ease 2ms;
   padding: 7px 27px;
 }
 .l2:hover{
   background-color: var(--Dark-cyan);
-  border: 3px solid white ;
+  border: 2px solid white ;
   color: white;
   transition: ease 2ms;
   padding: 7px 27px;
 }
 .l3:hover{
   background-color: var(--Very-dark-cyan);
-  border: 3px solid white ;
+  border: 2px solid white ;
   color: white;
   transition: ease 2ms;
   padding: 7px 27px;
