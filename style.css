@@ -64,6 +64,7 @@
     background-color: var(--Very-light-gray-bhb);
     display: grid;
     place-content: center;
+    margin-top: 15px;
     margin-left: 240px;
     border-radius: 1rem;
   }
