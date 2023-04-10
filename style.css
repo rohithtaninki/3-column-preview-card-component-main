@@ -1,0 +1,149 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-bhb: hsl(0, 0%, 95%);
+    --Font-size: 15px;
+    --fw-l:400;
+    --fw-b:700;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  body{
+    background-color: var(--Very-light-gray-bhb);
+    display: grid;
+    place-content: center;
+    margin-left: 240px;
+    border-radius: 1rem;
+  }
+  .container{
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .sedans{
+    background-color: var(--Bright-orange);
+    height: auto; 
+    border-radius: 0.6rem 0 0 0.6rem;
+    padding: 50px;
+    
+  }
+  .suvs{
+    background-color: var(--Dark-cyan);
+    padding: 50px;
+  }
+  .luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0.6rem 0.6rem 0;
+    padding: 50px;
+  }
+.con{
+  display: flex;
+}
+.t1,.t2,.t3{
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--Very-light-gray-bhb);
+  font-weight: var(--fw-b);
+  padding: 20px 0px;
+  font-size: 2rem;
+}
+.d1,.d2,.d3{
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: var(--fw-l);
+  font-size: var(--Font-size);
+  color: var(--Transparent-white-paragraphs);
+  line-height: 2;
+  padding-bottom: 50px;
+}
+.l1,.l2,.l3{
+  padding:10px 30px;
+  border-radius: 25px;
+  border: none;
+  position: relative;
+  top: 55px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  
+}
+.l1{
+  color:var(--Bright-orange);
+}
+.l2{
+  color: var(--Dark-cyan);
+}
+.l3{
+  color: var(--Very-dark-cyan);
+}
+.l1:hover{
+  background-color: var(--Bright-orange);
+  border: 3px solid white ;
+  color: white;
+  transition: ease 2ms;
+  padding: 7px 27px;
+}
+.l2:hover{
+  background-color: var(--Dark-cyan);
+  border: 3px solid white ;
+  color: white;
+  transition: ease 2ms;
+  padding: 7px 27px;
+}
+.l3:hover{
+  background-color: var(--Very-dark-cyan);
+  border: 3px solid white ;
+  color: white;
+  transition: ease 2ms;
+  padding: 7px 27px;
+}
